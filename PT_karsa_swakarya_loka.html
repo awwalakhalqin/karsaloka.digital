@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Karsa Swakarya Loka - Solusi Digital, Karya untuk Negeri</title>
+  <meta name="description"
+    content="PT Karsa Swakarya Loka - Software house Indonesia spesialis sistem klinik, operasional bisnis, dan corporate system. Konsultasi gratis!">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav>
+    <div class="nav-logo" onclick="showPage('home')">
+      <img src="img/logo_karsa.png" alt="Icon PT Karsa Swakarya Loka">
+      <!-- <div class="nav-logo-icon">
+        <img src="img/icon_karsa.png" alt="Icon PT Karsa Swakarya Loka">
+      </div>
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="15,10 15,50 52,28"/>
+        <polygon points="15,50 15,90 52,68" opacity="0.75"/>
+        <polygon points="52,28 85,48 52,68" opacity="0.9"/>
+        <polygon points="52,68 85,48 85,72" opacity="0.55"/>
+      </svg>
+      </div>
+      <div class="nav-logo-text">
+        <span class="brand">PT Karsa Swakarya Loka</span>
+        <span class="tagline">Solusi Digital, Karya untuk Negeri</span>
+      </div>  -->
+    </div>
+    <ul class="nav-links">
+      <li><a id="nav-home" class="active" onclick="showPage('home')">Home</a></li>
+      <li><a id="nav-about" onclick="showPage('about')">Tentang</a></li>
+      <!-- <li><a id="nav-services" onclick="showPage('services')">Layanan</a></li> -->
+      <!-- <li><a id="nav-solutions" onclick="showPage('solutions')">Solusi</a></li> -->
+      <li><a id="nav-portfolio" onclick="showPage('portfolio')">Portofolio</a></li>
+      <li><a id="nav-blog" onclick="showPage('blog')">Blog</a></li>
+      <li><a id="nav-contact" onclick="showPage('contact')">Kontak</a></li>
+    </ul>
+    <button class="nav-cta" onclick="showPage('contact')">Konsultasi Gratis</button>
+    <button class="hamburger" onclick="toggleMenu()" id="hambtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mob-menu">
+    <a onclick="showPage('home');toggleMenu()">Home</a>
+    <a onclick="showPage('about');toggleMenu()">Tentang Kami</a>
+    <a onclick="showPage('services');toggleMenu()">Layanan</a>
+    <a onclick="showPage('solutions');toggleMenu()">Solusi Industri</a>
+    <a onclick="showPage('portfolio');toggleMenu()">Portofolio</a>
+    <a onclick="showPage('blog');toggleMenu()">Blog</a>
+    <a onclick="showPage('contact');toggleMenu()">Kontak</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: HOME
+═══════════════════════════════════════════════════════ -->
+  <div id="home" class="page active">
+    <section id="home-hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow1"></div>
+      <div class="hero-glow2"></div>
+      <div class="hero-inner">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>Software House &amp; Digital Partner Terpercaya
+        </div>
+        <h1 class="hero-title">Sistem Digital yang<br><span class="grad-text">Menggerakkan</span><br>Bisnis Anda</h1>
+        <p class="hero-sub">Dari klinik kecantikan hingga perusahaan enterprise — kami membangun sistem custom yang
+          mengotomatisasi operasional dan mendorong pertumbuhan nyata.</p>
+        <div class="hero-actions">
+          <button class="btn-grad" onclick="showPage('contact')">Mulai Proyek →</button>
+          <button class="btn-ghost" onclick="showPage('portfolio')">Lihat Portofolio</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat">
+            <div class="hstat-num">50+</div>
+            <div class="hstat-label">Proyek Selesai</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-num">3</div>
+            <div class="hstat-label">Industri Utama</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-num">98%</div>
+            <div class="hstat-label">Tingkat Kepuasan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-services">
+      <div class="inner">
+        <div class="sec-label">Layanan Unggulan</div>
+        <h2 class="sec-title">Tiga Spesialisasi Utama</h2>
+        <p class="sec-sub">Solusi end-to-end: konsultasi, desain, pengembangan, hingga deployment &amp; maintenance
+          berkelanjutan.</p>
+        <div class="cards3">
+          <div class="scard">
+            <div class="scard-icon">🏥</div>
+            <div class="scard-title">Healthcare &amp; Beauty</div>
+            <div class="scard-desc">Sistem manajemen klinik, apotek, dan klinik kecantikan dengan booking otomatis,
+              rekam medis digital, dan AI chatbot layanan pelanggan.</div>
+            <div class="scard-tags"><span class="chip">Booking</span><span class="chip">WA Auto</span><span
+                class="chip">AI Chatbot</span></div>
+          </div>
+          <div class="scard">
+            <div class="scard-icon">✂️</div>
+            <div class="scard-title">Service &amp; Lifestyle</div>
+            <div class="scard-desc">Solusi operasional untuk laundry, salon, barber, café, dan restoran — tracking order
+              real-time &amp; notifikasi otomatis pelanggan.</div>
+            <div class="scard-tags"><span class="chip">Order Track</span><span class="chip">Notifikasi</span><span
+                class="chip">Antrian</span></div>
+          </div>
+          <div class="scard">
+            <div class="scard-icon">🏢</div>
+            <div class="scard-title">Corporate System</div>
+            <div class="scard-desc">Platform enterprise — HRIS, ERP, e-commerce, dan booking wisata dengan multi-role
+              dashboard dan integrasi API canggih.</div>
+            <div class="scard-tags"><span class="chip">HRIS</span><span class="chip">ERP</span><span class="chip">API
+                Integration</span></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem">
+          <button class="btn-grad" onclick="showPage('services')">Lihat Semua Layanan →</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="solutions">
+      <div class="sol-wrap">
+        <div class="sec-label">Solusi Industri</div>
+        <h2 class="sec-title">Dirancang untuk Industri Anda</h2>
+        <p class="sec-sub">Setiap industri punya tantangan unik. Kami hadir dengan solusi yang sudah terbukti untuk
+          masing-masing sektor bisnis Anda.</p>
+        <div class="sol-2col">
+          <div class="sol-card">
+            <div class="sol-ind">Healthcare &amp; Beauty</div>
+            <div class="sol-title">Klinik &amp; Apotek Modern</div>
+            <ul class="sol-list">
+              <li>Booking online 24/7 tanpa telepon</li>
+              <li>Rekam medis elektronik (EMR)</li>
+              <li>WhatsApp reminder otomatis</li>
+              <li>AI chatbot konsultasi awal</li>
+              <li>Dashboard analytics pasien</li>
+              <li>Integrasi BPJS &amp; asuransi</li>
+            </ul>
+          </div>
+          <div class="sol-card">
+            <div class="sol-ind">Service &amp; Lifestyle</div>
+            <div class="sol-title">Operasional Tanpa Repot</div>
+            <ul class="sol-list">
+              <li>Booking &amp; antrian digital</li>
+              <li>Tracking order real-time</li>
+              <li>Notifikasi WhatsApp &amp; SMS</li>
+              <li>Manajemen staf &amp; shift</li>
+              <li>Laporan penjualan harian</li>
+              <li>Program loyalitas pelanggan</li>
+            </ul>
+          </div>
+          <div class="sol-card">
+            <div class="sol-ind">Corporate System</div>
+            <div class="sol-title">Enterprise yang Skalabel</div>
+            <ul class="sol-list">
+              <li>HRIS multi-modul terintegrasi</li>
+              <li>ERP supply chain &amp; inventory</li>
+              <li>E-commerce B2B &amp; B2C</li>
+              <li>Multi-role access control</li>
+              <li>API integration third-party</li>
+              <li>Advanced reporting &amp; BI</li>
+            </ul>
+          </div>
+          <div class="sol-card">
+            <div class="sol-ind">Semua Industri</div>
+            <div class="sol-title">Fitur Inti Platform Kami</div>
+            <ul class="sol-list">
+              <li>Lead capture &amp; CRM database</li>
+              <li>WhatsApp Business API automation</li>
+              <li>AI chatbot berbasis knowledge base</li>
+              <li>Admin dashboard terpusat</li>
+              <li>WordPress API integration</li>
+              <li>Hosting &amp; maintenance 24/7</li>
+            </ul>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:3rem">
+          <button class="btn-grad" onclick="showPage('contact')">Konsultasi Solusi Terbaik →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-cta-banner">
+      <div class="sec-label" style="color:var(--cyan)">Lead Generator &amp; Sales Tool</div>
+      <h2>Website ini adalah <span class="grad-text">mesin bisnis</span> Anda</h2>
+      <p>Setiap pengunjung adalah calon klien. Sistem kami mengotomatisasi lead capture, follow-up, dan konversi — tanpa
+        intervensi manual. Bukan sekadar company profile.</p>
+      <button class="btn-grad" onclick="showPage('contact')">Konsultasi Gratis 30 Menit →</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: ABOUT
+═══════════════════════════════════════════════════════ -->
+  <div id="about" class="page">
+    <div class="about-wrap">
+      <div class="sec-label">Tentang Kami</div>
+      <h2 class="sec-title">PT Karsa Swakarya Loka</h2>
+      <p class="sec-sub">Software house Indonesia dengan misi membangun sistem digital yang memberi dampak nyata bagi
+        bisnis dan masyarakat.</p>
+
+      <div class="about-grid">
+        <!-- LEFT: Brand Visual -->
+        <div>
+          <div class="about-logo-wrap">
+            <div class="about-brand-icon">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
+                <polygon points="15,10 15,50 52,28" />
+                <polygon points="15,50 15,90 52,68" opacity="0.75" />
+                <polygon points="52,28 85,48 52,68" opacity="0.9" />
+                <polygon points="52,68 85,48 85,72" opacity="0.55" />
+              </svg>
+            </div>
+            <div class="about-brand-name">PT Karsa Swakarya Loka</div>
+            <div class="about-brand-sub">Solusi Digital, Karya untuk Negeri</div>
+            <div class="about-makna">
+              <div class="makna-row"><span class="makna-word">Karsa</span><span class="makna-def">Kemauan, niat, tekad
+                  yang kuat untuk berkarya</span></div>
+              <div class="makna-row"><span class="makna-word">Swakarya</span><span class="makna-def">Bekerja dengan
+                  usaha sendiri, berkarya mandiri</span></div>
+              <div class="makna-row"><span class="makna-word">Loka</span><span class="makna-def">Dunia, alam semesta,
+                  tempat berkarya</span></div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem">
+            <div
+              style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);margin-bottom:0.75rem">
+              Palet Warna Brand</div>
+            <div class="color-row">
+              <div class="color-swatch">
+                <div class="swatch-box" style="background:#0B1120"></div><span class="swatch-label">#0B1120</span>
+              </div>
+              <div class="color-swatch">
+                <div class="swatch-box" style="background:#0F1E3D"></div><span class="swatch-label">#0F1E3D</span>
+              </div>
+              <div class="color-swatch">
+                <div class="swatch-box" style="background:#1565FF"></div><span class="swatch-label">#1565FF</span>
+              </div>
+              <div class="color-swatch">
+                <div class="swatch-box" style="background:#00C2CB"></div><span class="swatch-label">#00C2CB</span>
+              </div>
+              <div class="color-swatch">
+                <div class="swatch-box" style="background:#F2F5F9;border:1px solid #ddd"></div><span
+                  class="swatch-label">#F2F5F9</span>
+              </div>
+            </div>
+            <div
+              style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);margin:0.75rem 0 0.4rem">
+              Tipografi Resmi</div>
+            <div style="font-family:'Poppins',sans-serif;font-size:1.5rem;font-weight:700;color:var(--navy)">Poppins
+            </div>
+            <div style="font-size:0.75rem;color:var(--text3);margin-top:0.2rem">
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</div>
+          </div>
+
+          <div
+            style="background:var(--navy);border-radius:14px;padding:1.5rem;margin-top:1.75rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+            <div>
+              <div
+                style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:0.4rem">
+                Kontak Resmi</div>
+              <div style="color:rgba(255,255,255,0.6);font-size:0.83rem">🌐 www.karsaswakaryaloka.id</div>
+              <div style="color:rgba(255,255,255,0.6);font-size:0.83rem;margin-top:0.2rem">📷 @karsaloka.digital</div>
+            </div>
+            <button class="btn-grad" onclick="showPage('contact')"
+              style="font-size:0.82rem;padding:0.65rem 1.4rem">Hubungi →</button>
+          </div>
+        </div>
+
+        <!-- RIGHT: Text Content -->
+        <div class="about-text">
+          <p>PT Karsa Swakarya Loka adalah software house dan digital partner yang berfokus pada pengembangan sistem
+            custom untuk bisnis Indonesia. Dengan semangat <em>"karsa"</em> — niat dan tekad kuat — kami hadir untuk
+            mewujudkan transformasi digital yang bermakna.</p>
+          <div class="about-quote">"Dengan niat yang baik dan usaha mandiri, kita berkarya untuk memberi manfaat bagi
+            dunia."</div>
+          <p>Setiap sistem yang kami bangun bukan sekadar software — melainkan <strong>mesin pertumbuhan</strong> yang
+            bekerja keras untuk bisnis Anda, 24 jam sehari, 7 hari seminggu. Website ini difokuskan sebagai lead
+            generator dan sales tool, bukan sekadar company profile.</p>
+
+          <h3 style="font-size:0.875rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.75rem">04. Nilai Perusahaan
+          </h3>
+          <div class="nilai-grid">
+            <div class="nilai-card">
+              <div class="nilai-icon">🚀</div>
+              <div class="nilai-title">Inovatif</div>
+              <div class="nilai-desc">Selalu mengembangkan solusi digital yang modern dan relevan dengan perkembangan
+                teknologi.</div>
+            </div>
+            <div class="nilai-card">
+              <div class="nilai-icon">🤝</div>
+              <div class="nilai-title">Mandiri &amp; Profesional</div>
+              <div class="nilai-desc">Bekerja dengan integritas, bertanggung jawab, dan berorientasi pada hasil nyata.
+              </div>
+            </div>
+            <div class="nilai-card">
+              <div class="nilai-icon">💙</div>
+              <div class="nilai-title">Bermanfaat</div>
+              <div class="nilai-desc">Memberi dampak positif dan nilai tambah bagi klien, tim, dan masyarakat luas.
+              </div>
+            </div>
+            <div class="nilai-card">
+              <div class="nilai-icon">🌱</div>
+              <div class="nilai-title">Berkelanjutan</div>
+              <div class="nilai-desc">Berkarya untuk pertumbuhan jangka panjang dan kemajuan bersama.</div>
+            </div>
+          </div>
+
+          <h3 style="font-size:0.875rem;font-weight:700;color:var(--navy);margin:1.75rem 0 0.75rem">04. Layanan Kami
+          </h3>
+          <div class="layanan-banner">
+            <div class="layanan-item">
+              <div class="layanan-icon">🌐</div>
+              <div class="layanan-text">Pengembangan Website &amp; Aplikasi</div>
+            </div>
+            <div class="layanan-item">
+              <div class="layanan-icon">📊</div>
+              <div class="layanan-text">Sistem Informasi &amp; Dashboard</div>
+            </div>
+            <div class="layanan-item">
+              <div class="layanan-icon">🤖</div>
+              <div class="layanan-text">AI Chatbot &amp; Automasi</div>
+            </div>
+            <div class="layanan-item">
+              <div class="layanan-icon">🔗</div>
+              <div class="layanan-text">Integrasi &amp; Konsultasi Digital</div>
+            </div>
+          </div>
+
+          <h3 style="font-size:0.875rem;font-weight:700;color:var(--navy);margin:1.75rem 0 0.75rem">12. Tone &amp; Feel
+          </h3>
+          <div class="tone-strip">
+            <div class="tone-card">
+              <div class="tone-icon">💎</div>
+              <div class="tone-title">Modern</div>
+              <div class="tone-desc">Desain clean, tegas, mengikuti perkembangan teknologi</div>
+            </div>
+            <div class="tone-card">
+              <div class="tone-icon">🛡️</div>
+              <div class="tone-title">Profesional</div>
+              <div class="tone-desc">Mencerminkan kredibilitas, kepercayaan, kualitas layanan</div>
+            </div>
+            <div class="tone-card">
+              <div class="tone-icon">⚡</div>
+              <div class="tone-title">Inovatif</div>
+              <div class="tone-desc">Selalu berinovasi memberikan solusi terbaik bagi klien</div>
+            </div>
+            <div class="tone-card">
+              <div class="tone-icon">🌿</div>
+              <div class="tone-title">Terpercaya</div>
+              <div class="tone-desc">Membangun hubungan jangka panjang berdasarkan integritas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: SERVICES
+═══════════════════════════════════════════════════════ -->
+  <div id="services" class="page" style="background:var(--gray)">
+    <div class="services-wrap">
+      <div class="sec-label">Layanan Kami</div>
+      <h2 class="sec-title">Tiga Spesialisasi Utama</h2>
+      <p class="sec-sub">Solusi end-to-end dari konsultasi, desain, pengembangan, hingga deployment dan maintenance
+        berkelanjutan.</p>
+      <div class="sfgrid">
+        <div class="sfcard">
+          <div class="sfcard-header">
+            <div class="sfcard-num">01</div>
+            <div class="sfcard-icon">🏥</div>
+            <div class="sfcard-title">Healthcare &amp; Beauty</div>
+          </div>
+          <div class="sfcard-body">
+            <div class="sfcard-desc">Sistem manajemen klinik, apotek, dan klinik kecantikan. Fokus pada manajemen
+              pasien, konsultasi digital, dan automasi komunikasi 24/7.</div>
+            <ul class="sfcard-features">
+              <li>Booking online 24/7 tanpa operator</li>
+              <li>Rekam medis elektronik (EMR)</li>
+              <li>WhatsApp reminder &amp; follow-up otomatis</li>
+              <li>AI chatbot konsultasi awal</li>
+              <li>Dashboard analytics pasien</li>
+              <li>Integrasi BPJS &amp; asuransi</li>
+            </ul>
+            <div class="sfcard-tags"><span class="chip">Booking System</span><span class="chip">WA
+                Automation</span><span class="chip">AI Chatbot</span><span class="chip">Dashboard Pasien</span></div>
+          </div>
+        </div>
+        <div class="sfcard">
+          <div class="sfcard-header">
+            <div class="sfcard-num">02</div>
+            <div class="sfcard-icon">✂️</div>
+            <div class="sfcard-title">Service &amp; Lifestyle</div>
+          </div>
+          <div class="sfcard-body">
+            <div class="sfcard-desc">Laundry, salon, barber, café, dan restoran. Fokus pada efisiensi operasional dan
+              pengalaman pelanggan yang seamless.</div>
+            <ul class="sfcard-features">
+              <li>Booking &amp; antrian digital</li>
+              <li>Order tracking real-time</li>
+              <li>Notifikasi WhatsApp &amp; SMS otomatis</li>
+              <li>Manajemen staf &amp; jadwal shift</li>
+              <li>Laporan penjualan harian</li>
+              <li>Program loyalitas pelanggan</li>
+            </ul>
+            <div class="sfcard-tags"><span class="chip">Order Tracking</span><span class="chip">Notifikasi
+                Auto</span><span class="chip">Manajemen Antrian</span></div>
+          </div>
+        </div>
+        <div class="sfcard">
+          <div class="sfcard-header">
+            <div class="sfcard-num">03</div>
+            <div class="sfcard-icon">🏢</div>
+            <div class="sfcard-title">Corporate System</div>
+          </div>
+          <div class="sfcard-body">
+            <div class="sfcard-desc">HRIS, ERP, e-commerce, dan booking wisata. Fokus pada sistem kompleks dengan
+              kebutuhan integrasi dan skalabilitas tinggi.</div>
+            <ul class="sfcard-features">
+              <li>HRIS multi-modul terintegrasi</li>
+              <li>ERP supply chain &amp; inventory</li>
+              <li>E-commerce B2B &amp; B2C</li>
+              <li>Multi-role access control</li>
+              <li>API integration third-party</li>
+              <li>Advanced reporting &amp; BI</li>
+            </ul>
+            <div class="sfcard-tags"><span class="chip">HRIS</span><span class="chip">ERP</span><span class="chip">API
+                Integration</span><span class="chip">Multi-role</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:3.5rem">
+        <div class="sec-label">Fitur Inti Platform</div>
+        <h3 style="font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem">Infrastruktur Digital
+          Bisnis Anda</h3>
+        <div class="fitur-grid">
+          <div class="fitur-box">
+            <div class="fitur-emoji">📥</div>
+            <div class="fitur-label">Lead Capture + CRM Database</div>
+          </div>
+          <div class="fitur-box">
+            <div class="fitur-emoji">💬</div>
+            <div class="fitur-label">WhatsApp Business Automation</div>
+          </div>
+          <div class="fitur-box">
+            <div class="fitur-emoji">🤖</div>
+            <div class="fitur-label">AI Chatbot Knowledge Base</div>
+          </div>
+          <div class="fitur-box">
+            <div class="fitur-emoji">📊</div>
+            <div class="fitur-label">Dashboard Admin Terpusat</div>
+          </div>
+          <div class="fitur-box">
+            <div class="fitur-emoji">🔌</div>
+            <div class="fitur-label">WordPress API Integration</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem">
+        <button class="btn-grad" onclick="showPage('contact')">Diskusi Kebutuhan Anda →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: SOLUTIONS
+═══════════════════════════════════════════════════════ -->
+
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: PORTFOLIO
+═══════════════════════════════════════════════════════ -->
+  <div id="portfolio" class="page" style="background:var(--gray)">
+    <div class="port-wrap">
+      <div class="sec-label">Portofolio</div>
+      <h2 class="sec-title">Proyek Unggulan Kami</h2>
+      <p class="sec-sub">50+ proyek selesai di berbagai industri. Setiap sistem dibangun dengan standar tinggi dan
+        berorientasi pada hasil bisnis nyata.</p>
+      <div class="port-tabs">
+        <button class="ptab active" onclick="filterPort('all',this)">Semua</button>
+        <button class="ptab" onclick="filterPort('hc',this)">Healthcare</button>
+        <button class="ptab" onclick="filterPort('sv',this)">Service</button>
+        <button class="ptab" onclick="filterPort('co',this)">Corporate</button>
+      </div>
+      <div class="port-grid" id="pgrid">
+        <div class="pcard" data-cat="hc">
+          <div class="pcard-img hc">🏥</div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Healthcare</div>
+            <div class="pcard-title">Klinik Kecantikan Aurora</div>
+            <div class="pcard-desc">Sistem manajemen pasien dengan booking online, rekam medis, dan WA automation untuk
+              follow-up perawatan otomatis.</div>
+          </div>
+        </div>
+        <div class="pcard" data-cat="hc">
+          <div class="pcard-img hc">💊</div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Healthcare</div>
+            <div class="pcard-title">Apotek Digital MedPlus</div>
+            <div class="pcard-desc">Platform apotek dengan manajemen stok real-time, resep digital, dan integrasi
+              pembayaran BPJS.</div>
+          </div>
+        </div>
+        <div class="pcard" data-cat="sv">
+          <div class="pcard-img sv">👗</div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Service &amp; Lifestyle</div>
+            <div class="pcard-title">LaundryPro Management</div>
+            <div class="pcard-desc">Sistem tracking laundry real-time dengan notifikasi WhatsApp otomatis ke pelanggan
+              saat cucian siap diambil.</div>
+          </div>
+        </div>
+        <div class="pcard" data-cat="sv">
+          <div class="pcard-img sv">✂️</div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Service &amp; Lifestyle</div>
+            <div class="pcard-title">BarberQ Booking System</div>
+            <div class="pcard-desc">Aplikasi booking barber dengan antrian digital, penilaian stylist, dan loyalty
+              program pelanggan.</div>
+          </div>
+        </div>
+        <div class="pcard" data-cat="co">
+          <div class="pcard-img co">🏢</div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Corporate System</div>
+            <div class="pcard-title">HRIS Enterprise Nusantara</div>
+            <div class="pcard-desc">Sistem HR terintegrasi untuk 500+ karyawan: rekrutmen, absensi, payroll, dan
+              evaluasi KPI.</div>
+          </div>
+        </div>
+        <div class="pcard" data-cat="co">
+          <div class="pcard-img co">🗺️</div>
+          <div class="pcard-body">
+            <div class="pcard-cat">Corporate System</div>
+            <div class="pcard-title">WisataNow Booking Platform</div>
+            <div class="pcard-desc">Platform booking wisata multi-vendor dengan payment gateway dan sistem komisi agen
+              otomatis.</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem">
+        <button class="btn-grad" onclick="showPage('contact')">Diskusikan Proyek Anda →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: BLOG
+═══════════════════════════════════════════════════════ -->
+  <div id="blog" class="page">
+    <div class="blog-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="sec-label">Blog &amp; Artikel</div>
+          <h2 class="sec-title">Insight &amp; Tips Digital Bisnis</h2>
+          <p class="sec-sub">Berbagi pengetahuan tentang transformasi digital, teknologi terkini, dan strategi bisnis
+            untuk entrepreneur Indonesia.</p>
+        </div>
+      </div>
+      <div class="blog-grid">
+        <div class="bcard">
+          <div class="bcard-thumb t1">📱</div>
+          <div class="bcard-body">
+            <div class="bcard-meta">Healthcare • 5 min baca</div>
+            <div class="bcard-title">Cara Otomatisasi Booking Klinik dengan WhatsApp API</div>
+            <div class="bcard-excerpt">Panduan lengkap mengintegrasikan WhatsApp Business API untuk sistem booking
+              klinik yang bekerja 24/7 tanpa operator.</div>
+          </div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-thumb t2">📊</div>
+          <div class="bcard-body">
+            <div class="bcard-meta">Corporate • 8 min baca</div>
+            <div class="bcard-title">HRIS vs Spreadsheet: Kapan Harus Upgrade Sistem HR?</div>
+            <div class="bcard-excerpt">Tanda-tanda bisnis Anda sudah outgrow spreadsheet dan saatnya berinvestasi pada
+              sistem HRIS yang proper.</div>
+          </div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-thumb t3">🤖</div>
+          <div class="bcard-body">
+            <div class="bcard-meta">Teknologi • 6 min baca</div>
+            <div class="bcard-title">AI Chatbot untuk Bisnis: Bukan Lagi Teknologi Mahal</div>
+            <div class="bcard-excerpt">Bagaimana UMKM dan klinik kecil bisa memanfaatkan AI chatbot untuk meningkatkan
+              konversi tanpa biaya besar.</div>
+          </div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-thumb t1">🚀</div>
+          <div class="bcard-body">
+            <div class="bcard-meta">Bisnis • 7 min baca</div>
+            <div class="bcard-title">5 Fitur Wajib Website Lead Generator untuk Bisnis Jasa</div>
+            <div class="bcard-excerpt">Website bukan sekadar etalase. Pelajari 5 fitur yang mengubah pengunjung menjadi
+              klien potensial secara otomatis.</div>
+          </div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-thumb t2">🛒</div>
+          <div class="bcard-body">
+            <div class="bcard-meta">E-commerce • 6 min baca</div>
+            <div class="bcard-title">B2B vs B2C E-commerce: Mana yang Tepat untuk Bisnis Anda?</div>
+            <div class="bcard-excerpt">Perbandingan mendalam dua model e-commerce — fitur, biaya, dan strategi untuk
+              masing-masing segmen.</div>
+          </div>
+        </div>
+        <div class="bcard">
+          <div class="bcard-thumb t3">💬</div>
+          <div class="bcard-body">
+            <div class="bcard-meta">Automasi • 5 min baca</div>
+            <div class="bcard-title">WhatsApp Business API: Panduan Lengkap untuk UMKM</div>
+            <div class="bcard-excerpt">Dari pendaftaran hingga implementasi — semua yang perlu Anda ketahui tentang WA
+              Business API untuk bisnis kecil.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE: CONTACT
+═══════════════════════════════════════════════════════ -->
+  <div id="contact" class="page">
+    <div class="contact-wrap">
+      <div class="sec-label" style="color:var(--cyan)">Hubungi Kami</div>
+      <h2 class="sec-title" style="color:white">Siap Memulai Proyek Anda?</h2>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-title">Konsultasi Gratis<br>30 Menit</div>
+          <div class="contact-info-sub">Ceritakan kebutuhan bisnis Anda dan kami akan merekomendasikan solusi terbaik —
+            tanpa komitmen apapun. Tim kami siap membantu Anda.</div>
+          <div class="cinfo-list">
+            <div class="cinfo-item">
+              <div class="cinfo-icon">🌐</div>
+              <div class="cinfo-text"><a href="https://www.karsaswakaryaloka.id"
+                  target="_blank">www.karsaswakaryaloka.id</a></div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">📧</div>
+              <div class="cinfo-text">info@karsaswakaryaloka.id</div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">📱</div>
+              <div class="cinfo-text">WhatsApp: +62 859-2980-3598</div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">📍</div>
+              <div class="cinfo-text">Jakarta, Indonesia</div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">⏰</div>
+              <div class="cinfo-text">Senin – Jumat, 09.00 – 18.00 WIB</div>
+            </div>
+          </div>
+          <div class="social-row">
+            <a class="social-btn" href="https://instagram.com/karsaloka.digital" target="_blank">📷
+              @karsaloka.digital</a>
+            <a class="social-btn" href="https://www.karsaswakaryaloka.id" target="_blank">🌐 Website</a>
+          </div>
+          <!-- <div class="invest-box">
+            <div class="invest-label">Range Investasi Proyek</div>
+            <div class="invest-num">Rp 20 – 80 Juta</div>
+            <div class="invest-sub">Sesuai kebutuhan &amp; kompleksitas sistem</div>
+          </div> -->
+        </div>
+        <div>
+          <div class="cform">
+            <div class="fgrp"><label class="flabel">Nama Lengkap</label><input class="finput" type="text"
+                placeholder="Nama Anda" id="f-name"></div>
+            <div class="frow2">
+              <div class="fgrp"><label class="flabel">Email</label><input class="finput" type="email"
+                  placeholder="email@bisnis.com" id="f-email"></div>
+              <div class="fgrp"><label class="flabel">WhatsApp</label><input class="finput" type="tel"
+                  placeholder="+62 8xx" id="f-wa"></div>
+            </div>
+            <div class="fgrp">
+              <label class="flabel">Jenis Bisnis</label>
+              <select class="fselect" id="f-biz">
+                <option value="">Pilih industri Anda</option>
+                <option>Klinik / Apotek / Healthcare</option>
+                <option>Salon / Barber / Laundry</option>
+                <option>Café / Restoran</option>
+                <option>Perusahaan (HRIS / ERP)</option>
+                <option>E-commerce / Marketplace</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="fgrp">
+              <label class="flabel">Perkiraan Budget</label>
+              <select class="fselect" id="f-budget">
+                <option value="">Pilih range budget</option>
+                <option>Rp 20 – 35 Juta</option>
+                <option>Rp 35 – 60 Juta</option>
+                <option>Rp 60 – 80 Juta</option>
+                <option>Di atas Rp 80 Juta</option>
+              </select>
+            </div>
+            <div class="fgrp"><label class="flabel">Ceritakan Kebutuhan Anda</label><textarea class="ftextarea"
+                placeholder="Fitur apa yang Anda butuhkan? Apa masalah operasional yang ingin diselesaikan?"
+                id="f-msg"></textarea></div>
+            <button class="submit-btn" id="ssbtn" onclick="handleSubmit()">Kirim &amp; Jadwalkan Konsultasi →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="foot-brand">PT Karsa <span>Swakarya Loka</span></div>
+    <!-- <div class="foot-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('about')">Tentang</a>
+      <a onclick="showPage('services')">Layanan</a>
+      <a onclick="showPage('portfolio')">Portofolio</a>
+      <a onclick="showPage('contact')">Kontak</a>
+    </div> -->
+    <div style="color:rgba(255,255,255,0.25);font-size:0.73rem">© 2025 PT Karsa Swakarya Loka. Jakarta, Indonesia.</div>
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById(id);
+      if (target) target.classList.add('active');
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      const navEl = document.getElementById('nav-' + id);
+      if (navEl) navEl.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function filterPort(cat, btn) {
+      document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.pcard').forEach(c => {
+        c.style.display = (cat === 'all' || c.dataset.cat === cat) ? '' : 'none';
+      });
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById('mob-menu');
+      menu.classList.toggle('open');
+    }
+
+    function handleSubmit() {
+      const name = document.getElementById('f-name').value.trim();
+      const email = document.getElementById('f-email').value.trim();
+      if (!name || !email) {
+        alert('Mohon isi nama dan email terlebih dahulu.');
+        return;
+      }
+      const btn = document.getElementById('ssbtn');
+      btn.textContent = '✓ Pesan terkirim! Tim kami akan menghubungi Anda dalam 24 jam.';
+      btn.style.background = 'linear-gradient(135deg,#0f6e56,#00C2CB)';
+      btn.disabled = true;
+    }
+
+    // Close mobile menu on outside click
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('mob-menu');
+      const hambtn = document.getElementById('hambtn');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && !hambtn.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+
+</html>
